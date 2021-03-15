@@ -11,7 +11,7 @@ const Home = () => {
         </Link>
         <ul id="nav-area">
           <li>
-            <NavLink exact to="/" className="item" activeClassName="active">
+            <NavLink exact to="/" className="item" activeclassname="active">
               HOME
             </NavLink>
           </li>
@@ -20,13 +20,13 @@ const Home = () => {
               exact
               to="/about"
               className="item"
-              activeClassName="active"
+              activeclassname="active"
             >
               ABOUT
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/menu" className="item" activeClassName="active">
+            <NavLink exact to="/menu" className="item" activeclassname="active">
               MENU
             </NavLink>
           </li>
@@ -36,7 +36,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
               className="item"
-              activeClassName="active"
+              activeclassname="active"
             >
               DELIVERY
             </a>

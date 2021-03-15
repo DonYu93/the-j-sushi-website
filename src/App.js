@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './pages/header/header';
-import Home from './pages/home/home';
-import About from './pages/about/about';
-import Menu from './pages/menu/menu';
+import Header from './components/header/header';
+import Home from './components/home/home';
+import About from './components/about/about';
+import Menu from './components/menu/menu';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
