@@ -1,17 +1,27 @@
 import './App.css';
-import { Link } from 'react-router-dom';
+import Header from './pages/header/header';
+import Home from './pages/home/home';
+import About from './pages/about/about';
+import Menu from './pages/menu/menu';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <div id="header">
-        <div id="header-area">
-          <Link to="/">
-            <img src="/images/icons/logo.png" alt="logo" />
-          </Link>
-        </div>
+      <Header />
+      <div id="body">
+        <Switch>
+          <Route exact path={'/'}>
+            <Home />
+          </Route>
+          <Route exact path={'/about'}>
+            <About />
+          </Route>
+          <Route exact path={'/menu'}>
+            <Menu />
+          </Route>
+        </Switch>
       </div>
-      <div id="body">body section</div>
     </div>
   );
 }
